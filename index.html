@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis XV Años</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./diseño/index.css">
+  <link rel="stylesheet" href="./diseño/presentacion.css">
+  <link rel="stylesheet" href="./diseño/buscador.css">
+  <link rel="stylesheet" href="config.css">
+
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- PORTADA -->
+<header class="header">
+  <h1 class="titulo">Mis XV Años</h1>
+  <p class="subtitulo">Faltan</p>
+
+  <div class="contador-linea">
+    <span id="dias">00</span> :
+    <span id="horas">00</span> :
+    <span id="minutos">00</span> :
+    <span id="segundos">00</span>
+  </div>
+
+  <div class="labels">
+    <span>Días</span>
+    <span>Horas</span>
+    <span>Min</span>
+    <span>Seg</span>
+  </div>
+
+  <p class="fecha">25 de Julio</p>
+
+  <a
+    href="https://youtu.be/fZSZMp32XaA?si=-CBTDlZFSKs8dhP3"
+    target="_blank"
+    class="btn-musica"
+  >
+    🎶 Mi canción
+  </a>
+</header>
+
+<!-- PRESENTACIÓN -->
+<section class="presentacion-quince">
+  <p class="nombre">
+    <span>celebro mis</span><br>
+    XV Años
+  </p>
+
+  <p class="mensaje">
+    Hay momentos inolvidables que se atesoran en el corazón, y mis XV años son uno de ellos.
+    Agradezco a todos los que han sido parte de este viaje, y espero compartir muchos más
+    momentos especiales juntos. Por esta razón queremos que compartas con nosotros
+    este día tan especial.
+  </p>
+</section>
+
+<!-- CONFIRMACIÓN DE ASISTENCIA -->
+<section class="buscador-familia">
+  <h2>Confirmación de Asistencia</h2>
+  <p>Busca el nombre de tu familia</p>
+
+  <input
+    type="text"
+    id="busqueda"
+    placeholder=""
+  >
+
+  <button onclick="buscarFamilia()">Buscar</button>
+
+  <div id="resultado" class="resultado"></div>
+</section>
+
+<!-- SCRIPTS -->
+<script src="contador.js"></script>
+<script src="familias.js"></script>
+
+</body>
+</html>
