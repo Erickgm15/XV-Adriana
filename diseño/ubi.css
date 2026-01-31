@@ -1,0 +1,79 @@
+.eventos {
+  padding: 80px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.eventos-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.eventos-descripcion {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 520px;
+  margin: 0 auto 45px;
+  color: #555;
+}
+
+.eventos-contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.evento-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 320px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+
+.evento-card:hover {
+  transform: translateY(-8px);
+}
+
+.evento-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.evento-info {
+  padding: 25px;
+}
+
+.evento-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.evento-lugar {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.evento-hora {
+  color: #777;
+  margin-bottom: 18px;
+}
+
+.evento-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 25px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.evento-btn:hover {
+  background: #444;
+}
