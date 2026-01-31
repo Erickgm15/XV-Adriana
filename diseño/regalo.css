@@ -1,0 +1,79 @@
+/* =======================
+   SECCIÓN REGALOS
+   ======================= */
+
+.regalos {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(
+    to bottom,
+    #fff7fb,
+    #ffffff
+  );
+}
+
+.regalos-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 18px;
+  color: #3a2f3a;
+}
+
+.regalos-descripcion {
+  max-width: 620px;
+  margin: 0 auto 45px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #4a4a4a;
+}
+
+.regalos-contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.regalo-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 38px 32px;
+  width: 300px;
+  box-shadow: 0 1
+}
+.regalo-img {
+  width: 90px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 22px;
+}
+.regalo-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #3a2f3a;
+}
+.regalo-card p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+.regalo-card a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #d67fb0;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s ease;
+}
+.regalo-card a:hover {
+  background-color: #e753ae;
+}
+.regalo-card {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    }

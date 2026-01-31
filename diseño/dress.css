@@ -1,8 +1,19 @@
 .dress-code {
   padding: 70px 20px;
   text-align: center;
-  background: #fff;
+
+  /* Imagen de fondo */
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("../assets/Rapunzel\ 💜🩷.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 .dress-titulo {
   font-family: 'Playfair Display', serif;
