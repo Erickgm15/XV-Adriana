@@ -3,13 +3,19 @@
    ======================= */
 
 .regalos {
-  padding: 80px 20px;
+padding: 70px 20px;
   text-align: center;
-  background: linear-gradient(
-    to bottom,
-    #fff7fb,
-    #ffffff
-  );
+
+  /* Imagen de fondo */
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("../assets/regalos2.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .regalos-titulo {

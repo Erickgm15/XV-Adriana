@@ -1,7 +1,13 @@
 .eventos {
-  padding: 80px 20px;
-  background: #f9f9f9;
+  padding: 70px 20px;
   text-align: center;
+
+  /* Imagen de fondo */
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("../assets/descargar\ \(1\).jpg");
 }
 
 .eventos-titulo {
