@@ -33,7 +33,7 @@ const familias = [
   { nombre: "Vinicio Irias", pases: 1 },
   { nombre: "Victor Manuel Moran", pases: 1 },
   { nombre: "Emerson Noriega", pases: 2 },
-
+  { nombre: "Familia Álavrez Gonzáles", pases: 2 },
 
 
 
