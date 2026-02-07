@@ -41,6 +41,8 @@ const familias = [
     // 📲 Número de WhatsApp (Guatemala)
     const numeroWhatsApp = "50230398945";
 
+    // Cambios
+
     function normalizarTexto(texto) {
       return texto
         .toLowerCase()
