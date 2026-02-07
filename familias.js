@@ -1,6 +1,6 @@
 const familias = [
       { nombre: "Delmy Ajuatz", pases: 2 },
-      { nombre: "Jimena Aérevalo", pases: 2 },
+      { nombre: "Jimena Arevalo", pases: 2 },
       { nombre: "Nahomy Vásquez", pases: 2 },
       { nombre: "Julian Ayala", pases: 2 },
       { nombre: "Juan Diego Escobar", pases: 2 },
@@ -18,7 +18,8 @@ const familias = [
       { nombre: "Oscar Rivas", pases: 4 },
       { nombre: "Byron Escobar", pases: 3 },
       { nombre: "Luis Zabala", pases: 3 },
-      { nombre: "Familia Vásquez", pases: 4 },
+      { nombre: "Marian Vásquez", pases: 2},
+       { nombre: "Omar Vásquez", pases: 2},
       { nombre: "Familia Vásquez Kihn", pases: 3 },
       { nombre: "Familia Mendez Vásquez", pases: 3 },
       { nombre: "Hugo Vásquez", pases: 1 },
@@ -33,7 +34,8 @@ const familias = [
       { nombre: "Vinicio Irias", pases: 1 },
       { nombre: "Victor Manuel Moran", pases: 1 },
       { nombre: "Emerson Noriega", pases: 2 },
-      { nombre: "Familia Álvarez González", pases: 3 }
+      { nombre: "Familia Álvarez González", pases: 2 },
+      { nombre: "Familia Álvarez Vásquez", pases: 3 }
     ];
 
     // 📲 Número de WhatsApp (Guatemala)
