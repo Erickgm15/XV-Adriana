@@ -1,48 +1,84 @@
 .presentacion-quince {
-  min-height: 80vh;
-  padding: 60px 20px;
+  min-height: 100vh;
+  padding: 80px 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   background:
     linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.85)
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.75)
     ),
     url("../assets/presentcion.jpg");
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed; 
 }
 
+/* Subtítulo */
 .presentacion-quince h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.85rem;
-  letter-spacing: 2px;
-  color: #7a2c5c;
-  margin-bottom: 12px;
+  font-size: 0.9rem;
+  letter-spacing: 4px;
+  color: #e6c27a; /* dorado elegante */
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
+/* Nombre principal */
 .nombre {
   font-family: 'Playfair Display', serif;
-  font-size: 2.3rem;
-  color: #5a1f42;
-  margin-bottom: 18px;
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
 .nombre span {
-  font-size: 0.9rem;
+  display: block;
+  font-size: 1rem;
   font-family: 'Cormorant Garamond', serif;
-  letter-spacing: 2px;
-  color: #8c3a6b;
+  letter-spacing: 3px;
+  color: #f1d4a6;
+  margin-top: 8px;
 }
 
+/* Mensaje */
 .mensaje {
-  font-family:  'Cormorant Garamond', serif;
-  font-size: 1rem;
-  color: #4a1736;
-  line-height: 1.6;
-  max-width: 320px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  color: #f5f5f5;
+  line-height: 1.8;
+  max-width: 600px;
   margin: 0 auto;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+
+@media (max-width: 768px) {
+
+  .presentacion-quince {
+    padding: 60px 20px;
+    background-attachment: scroll; 
+  }
+
+  .nombre {
+    font-size: 2.2rem;
+  }
+
+  .mensaje {
+    font-size: 1.05rem;
+    max-width: 90%;
+  }
+
+  .presentacion-quince h2 {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+  }
 }
