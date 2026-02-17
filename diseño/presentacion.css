@@ -7,17 +7,21 @@
   justify-content: center;
   align-items: center;
 
-  background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.75)
-    ),
-    url("../assets/presentcion.jpg");
+  min-height: 100vh;
+  padding: 40px 20px;
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
+  background: linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.65)
+    ),
+    url("../assets/presentacion22.jpg") center center / cover no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 }
 
 /* Subtítulo */
@@ -81,4 +85,24 @@
     font-size: 0.75rem;
     letter-spacing: 3px;
   }
+}
+
+/* ==============================
+   MODO COMPUTADORA (PANTALLA GRANDE)
+================================= */
+@media (min-width: 1024px) {
+
+  body {
+    display: flex;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  section {
+  min-width: 33.33vw;
+  min-height: 60vh;
+  height: auto;
+}
+
 }
