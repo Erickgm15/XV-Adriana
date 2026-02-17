@@ -3,99 +3,125 @@
 ======================= */
 
 .regalos {
-  padding: 10vh 5vw;
+  padding: 12vh 5vw;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 
   background-image: linear-gradient(
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.65)
+      rgba(20, 0, 25, 0.75),
+      rgba(40, 0, 45, 0.85)
     ),
-    url("../assets/regalos2.png");
+    url("../assets/ranpunzel22.png");
 
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: #2a002e;
+}
+
+/* ✨ efecto de brillo suave */
+.regalos::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 192, 203, 0.25), transparent 70%);
+  top: -100px;
+  right: -100px;
+  filter: blur(60px);
 }
 
 /* TÍTULO */
 .regalos-titulo {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
-  margin-bottom: 18px;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin-bottom: 20px;
   color: #ffffff;
-  text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+  letter-spacing: 1px;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.7);
 }
 
 /* DESCRIPCIÓN */
 .regalos-descripcion {
-  max-width: 600px;
-  margin: 0 auto 50px;
+  max-width: 650px;
+  margin: 0 auto 60px;
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
-  line-height: 1.7;
-  color: #f3e6f1;
+  font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+  line-height: 1.8;
+  color: #f5d9f0;
 }
 
 /* CONTENEDOR CENTRADO */
 .regalos-contenedor {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-/* CARD MÁS PEQUEÑA Y ELEGANTE */
+/* CARD MÁS PREMIUM */
 .regalo-card {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 20px;
-  padding: 30px 25px;
-  width: 220px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
-  transition: 0.4s ease;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  padding: 35px 30px;
+  width: 240px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255,255,255,0.4);
 }
 
 .regalo-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.35);
 }
 
 /* IMAGEN PROPORCIONAL */
 .regalo-img {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+}
+
+.regalo-card:hover .regalo-img {
+  transform: scale(1.1);
 }
 
 /* TITULO CARD */
 .regalo-card h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
-  margin-bottom: 8px;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
   color: #7a1f52;
 }
 
 /* TEXTO CARD */
 .regalo-card p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
 }
 
 /* BOTÓN PREMIUM */
 .regalo-card a {
   display: inline-block;
-  margin-top: 15px;
-  padding: 9px 20px;
-  border-radius: 25px;
+  margin-top: 18px;
+  padding: 10px 24px;
+  border-radius: 30px;
   background: linear-gradient(135deg, #7a1f52, #d46ba3);
   color: #fff;
   text-decoration: none;
-  font-size: 0.85rem;
-  transition: 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(122, 31, 82, 0.25);
 }
 
 .regalo-card a:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(122, 31, 82, 0.3);
+  transform: scale(1.08);
+  box-shadow: 0 12px 30px rgba(122, 31, 82, 0.4);
 }

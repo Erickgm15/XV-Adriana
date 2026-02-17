@@ -6,7 +6,7 @@
       rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.65)
     ),
-    url("../assets/descargar (1).jpg");
+    url("../assets/fondo.png");
 
   background-size: cover;
   background-position: center;
@@ -57,10 +57,13 @@
 
 /* IMAGEN AJUSTADA */
 .evento-img {
+ 
   width: 100%;
-  height: 160px; /* más pequeña */
-  object-fit: cover;
+  height: 140px;
+  object-fit: contain;
 }
+
+
 
 /* INFO */
 .evento-info {
