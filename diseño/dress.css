@@ -9,7 +9,7 @@
       rgba(0,0,0,0.45),
       rgba(0,0,0,0.65)
     ),
-    url("../assets/Rapunzel\ 💜🩷.jpg") center center / cover no-repeat;
+    url("../assets/Fondos\ rapunzel.jpg") center center / cover no-repeat;
 
   display: flex;
   flex-direction: column;
@@ -48,36 +48,53 @@
 
 /* CARD */
 .dress-card {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 16px;
-  padding: 22px 18px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-  transition: 0.4s ease;
+  background: linear-gradient(145deg, #5a2a83, #7b3fb6);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  padding: 30px 25px;
+  width: 220px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+  transition: all 0.4s ease;
+  border: 2px solid rgba(243, 210, 122, 0.4);
 }
 
 .dress-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 25px 60px rgba(123, 63, 182, 0.6);
 }
 
-/* IMAGEN PROPORCIONAL */
+/* IMAGEN */
 .dress-img {
-  width: 100%;
-  max-width: 70px;
-  height: 70px;
+  width: 85px;
+  height: 85px;
   object-fit: contain;
-  margin: 0 auto 15px;
-  display: block;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+
+  background: linear-gradient(135deg, #b993d6, #8ca6db);
+  border-radius: 15px;
+  padding: 10px;
 }
 
-/* TITULO CARD */
+.dress-card:hover .dress-img {
+  transform: scale(1.1);
+}
+
+/* TITULO */
 .dress-card h3 {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(1.1rem, 2vw, 1.3rem);
-  margin-bottom: 8px;
-  color: #7a1f52;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #f3d27a;
 }
 
+/* TEXTO */
+.dress-card p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #f5e6f3;
+}
 /* TEXTO CARD */
 .dress-card p {
   font-family: 'Montserrat', sans-serif;

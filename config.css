@@ -8,3 +8,16 @@
 body {
   background-color: #fbeff5;
 }
+
+:root {
+  --fuente-principal: 'Montserrat', sans-serif;
+  --fuente-titulo: 'Playfair Display', serif;
+}
+
+body {
+  font-family: var(--fuente-principal);
+}
+
+h1, h2, h3 {
+  font-family: var(--fuente-titulo);
+}

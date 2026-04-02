@@ -21,7 +21,7 @@ body {
       rgba(0,0,0,0.45),
       rgba(0,0,0,0.65)
     ),
-    url("../assets/ranpunzel.jpg") center center / cover no-repeat;
+    url("../assets/adri.jpeg") center center / cover no-repeat;
 
   display: flex;
   flex-direction: column;
