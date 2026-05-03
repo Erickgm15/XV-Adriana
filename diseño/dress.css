@@ -5,11 +5,11 @@
   min-height: 100vh;
   padding: 40px 20px;
 
-  background: linear-gradient(
-      rgba(0,0,0,0.45),
-      rgba(0,0,0,0.65)
-    ),
-    url("../assets/Fondos\ rapunzel.jpg") center center / cover no-repeat;
+background: linear-gradient(
+  rgba(0,0,0,0.25),
+  rgba(0,0,0,0.4)
+),
+    url("../assets/adri2.jpg") center center / cover no-repeat;
 
   display: flex;
   flex-direction: column;
@@ -37,77 +37,115 @@
   color: #f5e6f3;
 }
 
-/* CONTENEDOR RESPONSIVE AUTOMÁTICO */
+
 .dress-contenedor {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 25px;
   max-width: 900px;
   margin: auto;
+  justify-items: center;
 }
 
-/* CARD */
+
 .dress-card {
-  background: linear-gradient(145deg, #5a2a83, #7b3fb6);
-  backdrop-filter: blur(10px);
-  border-radius: 25px;
-  padding: 30px 25px;
-  width: 220px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
-  transition: all 0.4s ease;
-  border: 2px solid rgba(243, 210, 122, 0.4);
+  background: rgba(255, 255, 255, 0.08); /* MÁS FINO */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 22px;
+  padding: 28px 22px;
+  width: 100%;
+  max-width: 220px;
+
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+  transition: all 0.35s ease;
 }
+
 
 .dress-card:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 25px 60px rgba(123, 63, 182, 0.6);
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.45);
 }
 
-/* IMAGEN */
-.dress-img {
-  width: 85px;
-  height: 85px;
-  object-fit: contain;
-  margin-bottom: 20px;
-  transition: transform 0.4s ease;
 
-  background: linear-gradient(135deg, #b993d6, #8ca6db);
-  border-radius: 15px;
+.dress-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 18px;
+  transition: transform 0.3s ease;
+
+  background: rgba(255,255,255,0.15);
+  border-radius: 14px;
   padding: 10px;
 }
 
 .dress-card:hover .dress-img {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
-/* TITULO */
+
 .dress-card h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  color: #f3d27a;
-}
-
-/* TEXTO */
-.dress-card p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: #f5e6f3;
-}
-/* TEXTO CARD */
-.dress-card p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   margin-bottom: 8px;
-  color: #444;
+  color: #f3d27a;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
-/* DETALLE */
+
+.dress-card p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #f5e6f3;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  margin-bottom: 6px;
+}
+
 .dress-detalle {
-  font-size: 0.8rem;
-  color: #8a6b7d;
+  font-size: 0.75rem;
+  color: #e0cce3;
   font-style: italic;
+}
+/* ==============================
+   MODO CELULAR
+================================= */
+@media (max-width: 768px) {
+
+  .dress-code {
+    padding: 60px 20px;
+    background-attachment: scroll;
+  }
+
+  .dress-titulo {
+    font-size: 2.2rem;
+  }
+
+  .dress-descripcion {
+    font-size: 1.05rem;
+    max-width: 90%;
+    margin-bottom: 40px;
+  }
+
+  .dress-contenedor {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .dress-card {
+    width: 100%;
+    max-width: 280px;
+    margin: auto;
+  }
+
+  .dress-img {
+    width: 75px;
+    height: 75px;
+  }
 }
 
 /* ==============================
@@ -123,9 +161,9 @@
   }
 
   section {
-    min-width: 33.33vw;   /* cada sección ocupa 1/3 de la pantalla */
-    height: 100vh;
-    overflow-y: auto;
+    min-width: 33.33vw;
+    min-height: 60vh;
+    height: auto;
   }
 
 }
