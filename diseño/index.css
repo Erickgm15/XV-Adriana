@@ -1,4 +1,4 @@
-/* ===== RESET ===== */
+/* RESET  */
 
 * {
   box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== HEADER PRINCIPAL ===== */
+/* HEADER PRINCIPAL */
 
 .header {
   min-height: 100vh;
@@ -30,7 +30,7 @@ body {
   text-align: center;
 }
 
-/* ===== TEXTOS ===== */
+/* TEXTOS  */
 
 .titulo {
   font-family: 'Playfair Display', serif;
@@ -47,7 +47,7 @@ body {
   margin: 10px 0;
 }
 
-/* ===== CONTADOR ===== */
+/* CONTADOR  */
 
 .contador-linea {
   display: flex;
@@ -62,7 +62,7 @@ body {
   margin: 20px 0;
 }
 
-/* ===== LABELS ===== */
+/* LABELS  */
 
 .labels {
   display: flex;
@@ -75,7 +75,7 @@ body {
   letter-spacing: 1px;
 }
 
-/* ===== FECHA ===== */
+/* FECHA  */
 
 .fecha {
   font-size: clamp(1.5rem, 3vw, 2rem);
@@ -83,7 +83,7 @@ body {
   margin-bottom: 25px;
 }
 
-/* ===== BOTÓN ===== */
+/* BOTÓN */
 
 .btn-musica {
   margin-top: 10px;
@@ -103,7 +103,7 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE  */
 
 @media (max-width: 480px) {
 

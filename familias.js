@@ -100,3 +100,18 @@ const familias = [
         </a>
       `;
     }
+
+    window.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const nombreURL = params.get("nombre");
+
+  if (nombreURL) {
+    document.getElementById("busqueda").value =
+      decodeURIComponent(nombreURL);
+
+    buscarFamilia();
+
+    // Ocultar el buscador
+    document.getElementById("busqueda").style.display = "none";
+  }
+});
