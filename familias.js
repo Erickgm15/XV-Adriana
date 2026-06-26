@@ -47,6 +47,7 @@ const familias = [
       { nombre: "Keyla", pases: 4 },
       { nombre: "Vicky Rivas", pases: 2 },
       { nombre: "Cindy Estrada", pases: 5 },
+      { nombre: "Ariel Garcia ", pases: 4 },
     ];
 
     // 📲 Número de WhatsApp (Guatemala)
