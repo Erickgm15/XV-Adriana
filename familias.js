@@ -50,6 +50,14 @@ const familias = [
       { nombre: "Ariel Garcia ", pases: 4 },
        { nombre: "Neto Bran", pases: 5 },
         { nombre: "Douglas Contreras", pases: 5 },
+        { nombre: "Joaquín De La Vega", pases: 1 },
+         { nombre: "Pablo de La Cruz", pases: 1 },
+         { nombre: "Darlin Quintana", pases: 1 },
+         { nombre: "Keller Elihù", pases: 1 },
+        { nombre: "Diego Flores", pases: 1 },
+          { nombre: "Valentina Borrayo", pases: 2},
+          { nombre: "Karin Morales", pases: 4},
+        
     ];
 
     // 📲 Número de WhatsApp (Guatemala)
